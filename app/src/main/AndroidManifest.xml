@@ -17,6 +17,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.UBEER">
         <activity android:name=".ActivityAccount"
             android:theme="@style/AppTheme.NoActionBar"></activity>
@@ -41,6 +42,13 @@
         <activity
             android:name=".ubeermain"
             android:theme="@style/AppTheme.NoActionBar" />
+=======
+        android:theme="@style/Theme.UBEERFINAL">
+<<<<<<< HEAD
+=======
+        <activity android:name=".ActivityLogin"></activity>
+>>>>>>> 6a221b36050a3d069ffa38065d29f6bc7c66552a
+>>>>>>> 9a81494bd81b544e9564baef91ea9d33f52eba59
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
