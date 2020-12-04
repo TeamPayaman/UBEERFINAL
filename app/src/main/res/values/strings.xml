@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">UBEERFINAL</string>
+    <string name="app_name">UBEER</string>
+    <string name="login">login</string>
+    <string name="sign_up">Signup</string>
+    <string name="created_by_team_payaman_group">Created by:Team Payaman Group</string>
+    <string name="ubeer_login">Ubeer Login</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_here_create_account">New here? Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="ubeer_register">Ubeer Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">Already Registered? Login here</string>
+    <string name="phone">Phone</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_title">Main Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="buy">Buy</string>
+    <string name="todo">TODO</string>
+    <string name="your_name" translatable="false">your name</string>
+    <string name="full_name2" translatable="false">Full Name</string>
+
 </resources>
