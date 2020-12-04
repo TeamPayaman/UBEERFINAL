@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UBEERFINAL">
+<<<<<<< HEAD
+=======
+        <activity android:name=".ActivityLogin"></activity>
+>>>>>>> 6a221b36050a3d069ffa38065d29f6bc7c66552a
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
