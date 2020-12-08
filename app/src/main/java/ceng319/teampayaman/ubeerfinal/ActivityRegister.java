@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ActivityRegister extends AppCompatActivity {
 
@@ -34,6 +35,7 @@ public class ActivityRegister extends AppCompatActivity {
         password = findViewById(R.id.password);
         btnSignUp = findViewById(R.id.registerBtn);
         tvSignIn = findViewById(R.id.createText);
+
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
