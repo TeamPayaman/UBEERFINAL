@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "79178427139",
+    "firebase_url": "https://ubeer-7079a.firebaseio.com",
+    "project_id": "ubeer-7079a",
+    "storage_bucket": "ubeer-7079a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79178427139:android:095b0190458c8a1de11736",
+        "android_client_info": {
+          "package_name": "ceng319.teampayaman.UBEER"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79178427139-nt5if8foe73kpan1lrdhpml21rvk5k1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFzNUQHm6fpCb3I40uUTpQUl23DUfCr-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79178427139-nt5if8foe73kpan1lrdhpml21rvk5k1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79178427139:android:b8078fa458f76eede11736",
+        "android_client_info": {
+          "package_name": "ceng319.teampayaman.ubeerfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79178427139-nt5if8foe73kpan1lrdhpml21rvk5k1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFzNUQHm6fpCb3I40uUTpQUl23DUfCr-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79178427139-nt5if8foe73kpan1lrdhpml21rvk5k1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
