@@ -8,10 +8,9 @@ public class User {
     public User(){
     }
 
-    public User(String name, String password,String email){
+    public User(String name, String password){
         Name = name;
         Password = password;
-        Email = email;
     }
 
     public String getName() {
@@ -30,10 +29,5 @@ public class User {
         Password = password;
     }
 
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) { Email = email; }
 
 }
