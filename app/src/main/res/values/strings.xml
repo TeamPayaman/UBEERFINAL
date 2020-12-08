@@ -25,5 +25,7 @@
     <string name="todo">TODO</string>
     <string name="your_name" translatable="false">your name</string>
     <string name="full_name2" translatable="false">Full Name</string>
+    <string name="ubeer">UBEER</string>
+    <string name="full_name">Full Name</string>
 
 </resources>

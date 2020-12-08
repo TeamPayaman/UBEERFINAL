@@ -38,18 +38,25 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActivityRegister" />
-        <activity android:name=".ActivityLogin" />
+        <activity android:name=".ActivityRegister"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityLogin"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ubeermain"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

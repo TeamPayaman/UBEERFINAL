@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9400d3"
+    android:background="@drawable/beerbubble"
     tools:context="ActivityRegister">
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/create_new_account"
-        android:textColor="#F7F7F8"
+        android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,14 +35,14 @@
 
     <EditText
         android:id="@+id/fullname"
-        android:layout_width="377dp"
-        android:layout_height="44dp"
+        android:layout_width="360dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:background="#FFFFFF"
         android:ems="10"
-        android:hint="Full Name"
+        android:hint="@string/full_name"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="#000000"
@@ -122,8 +122,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="164dp"
+        android:background="@color/cocomartin"
         android:text="@string/register"
-        android:textColor="#FFEB3B"
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
