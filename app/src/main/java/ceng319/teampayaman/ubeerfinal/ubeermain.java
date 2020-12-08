@@ -15,6 +15,8 @@ import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import ceng319.teampayaman.ubeerfinal.R;
 
@@ -23,6 +25,8 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
     DrawerLayout drawer;
     NavigationView navigationView;
     Toolbar toolbar;
+    FirebaseDatabase database;
+    DatabaseReference category;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,13 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
 
         drawer = findViewById(R.id.drawer_layout);
         toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Menu");
+        setSupportActionBar(toolbar);
+
+        //Init Firebase
+        database = FirebaseDatabase.getInstance();
+        category = database.getReference("Category");
+
         navigationView = findViewById(R.id.nav_view);
         navigationView.bringToFront();
 

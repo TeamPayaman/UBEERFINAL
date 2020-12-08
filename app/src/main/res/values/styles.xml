@@ -12,4 +12,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/cocomartin</item>
+        <item name="android:textColorSecondary">@color/teal_700</item>
+    </style>
+
 </resources>
