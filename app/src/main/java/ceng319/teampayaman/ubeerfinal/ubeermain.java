@@ -42,6 +42,7 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
     TextView txtfullname;
     RecyclerView recycler_menu;
     RecyclerView.LayoutManager layoutManager;
+    FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter;
 
 
     @Override
@@ -80,7 +81,7 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
     }
 
     private void loadMenu(){
-        FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.list_item_beer,MenuViewHolder.class,category) {
+         adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.list_item_beer,MenuViewHolder.class,category) {
             @Override
             protected void populateViewHolder(MenuViewHolder menuViewHolder, Category model, int i) {
                 menuViewHolder.txtMenuName.setText(model.getName());
@@ -89,7 +90,10 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
                 menuViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(ubeermain.this,""+clickItem.getName(),Toast.LENGTH_SHORT).show();
+                        //Get CategoryID and send to ubeerdrinklist
+                        Intent drinklist = new Intent(ubeermain.this,UbeerDrinkList.class);
+                        drinklist.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        startActivity(drinklist);
                     }
                 });
             }

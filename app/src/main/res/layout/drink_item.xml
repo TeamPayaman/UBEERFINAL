@@ -4,22 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    android:layout_marginBottom="8dp"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/menu_image"
+            android:id="@+id/drink_image"
             android:scaleType="centerCrop"
             android:src="@drawable/background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
         <TextView
-            android:id="@+id/menu_name"
-            android:text="@string/name_of_menu"
+            android:id="@+id/drink_name"
+            android:text="Name of drink"
             android:textColor="@android:color/white"
             android:background="#B3000000"
             android:gravity="center"
