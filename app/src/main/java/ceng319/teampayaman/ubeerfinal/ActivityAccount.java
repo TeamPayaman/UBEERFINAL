@@ -49,7 +49,7 @@ public class ActivityAccount extends AppCompatActivity implements NavigationView
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_home:
-                Intent i = new Intent(ActivityAccount.this, HomeActivity.class);
+                Intent i = new Intent(ActivityAccount.this, ubeermain.class);
                 startActivity(i);
                 break;
             case R.id.nav_account:

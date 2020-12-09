@@ -10,6 +10,8 @@
     tools:context=".ActivityAccount"
     tools:openDrawer="start">
 
+
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
