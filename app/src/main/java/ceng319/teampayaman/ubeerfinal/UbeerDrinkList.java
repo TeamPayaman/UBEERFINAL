@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -65,7 +66,10 @@ public class UbeerDrinkList extends AppCompatActivity {
                 drinkViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(UbeerDrinkList.this,""+local.getName(),Toast.LENGTH_SHORT).show();
+                        //View Drink details
+                        Intent drinkDetail = new Intent(UbeerDrinkList.this,DrinkDetail.class);
+                        drinkDetail.putExtra("DrinkId",adapter.getRef(position).getKey());
+                        startActivity(drinkDetail);
                     }
                 });
             }
