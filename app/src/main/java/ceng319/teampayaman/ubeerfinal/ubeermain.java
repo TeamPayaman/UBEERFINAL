@@ -42,6 +42,10 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
     TextView txtfullname;
     RecyclerView recycler_menu;
     RecyclerView.LayoutManager layoutManager;
+<<<<<<< HEAD
+=======
+    FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter;
+>>>>>>> cc987d7dac12d1729c17d95ea6743ae64923d3c0
 
 
     @Override
@@ -80,7 +84,11 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
     }
 
     private void loadMenu(){
+<<<<<<< HEAD
         FirebaseRecyclerAdapter<Category,MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.list_item_beer,MenuViewHolder.class,category) {
+=======
+         adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.list_item_beer,MenuViewHolder.class,category) {
+>>>>>>> cc987d7dac12d1729c17d95ea6743ae64923d3c0
             @Override
             protected void populateViewHolder(MenuViewHolder menuViewHolder, Category model, int i) {
                 menuViewHolder.txtMenuName.setText(model.getName());
@@ -89,7 +97,14 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
                 menuViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
+<<<<<<< HEAD
                         Toast.makeText(ubeermain.this,""+clickItem.getName(),Toast.LENGTH_SHORT).show();
+=======
+                        //Get CategoryID and send to ubeerdrinklist
+                        Intent drinklist = new Intent(ubeermain.this,UbeerDrinkList.class);
+                        drinklist.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        startActivity(drinklist);
+>>>>>>> cc987d7dac12d1729c17d95ea6743ae64923d3c0
                     }
                 });
             }

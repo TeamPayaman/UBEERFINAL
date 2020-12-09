@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> cc987d7dac12d1729c17d95ea6743ae64923d3c0
     android:layout_width="match_parent"
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    android:layout_marginBottom="8dp"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/menu_image"
+            android:id="@+id/drink_image"
             android:scaleType="centerCrop"
             android:src="@drawable/background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
         <TextView
-            android:id="@+id/menu_name"
-            android:text="@string/name_of_menu"
+            android:id="@+id/drink_name"
+            android:text="Name of drink"
             android:textColor="@android:color/white"
             android:background="#B3000000"
             android:gravity="center"
