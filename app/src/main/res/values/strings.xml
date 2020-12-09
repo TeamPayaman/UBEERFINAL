@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">UBEER</string>
+    <string name="login">login</string>
+    <string name="sign_up">Signup</string>
+    <string name="created_by_team_payaman_group">Created by:Team Payaman Group</string>
+    <string name="ubeer_login">Ubeer Login</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_here_create_account">New here? Create Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="ubeer_register">Ubeer Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">Already Registered? Login here</string>
+    <string name="phone">Phone</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_title">Main Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="buy">Buy</string>
+    <string name="todo">TODO</string>
+    <string name="your_name" translatable="false">your name</string>
+    <string name="full_name2" translatable="false">Full Name</string>
+    <string name="ubeer">UBEER</string>
+    <string name="full_name">Full Name</string>
+    <string name="title_activity_home">Home</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="name_of_menu">Name of Menu</string>
+
+</resources>
