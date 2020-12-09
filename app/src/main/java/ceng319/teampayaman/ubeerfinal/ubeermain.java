@@ -21,9 +21,11 @@ import android.widget.Toast;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 
 import ceng319.teampayaman.ubeerfinal.Common.Common;
@@ -100,6 +102,7 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
         };
         recycler_menu.setAdapter(adapter);
     }
+
 
     @Override
     public void onBackPressed() {

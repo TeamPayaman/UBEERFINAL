@@ -29,6 +29,8 @@ public class UbeerDrinkList extends AppCompatActivity {
     String categoryId = "";
     FirebaseRecyclerAdapter<Drinks, DrinkViewHolder> adapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +59,8 @@ public class UbeerDrinkList extends AppCompatActivity {
             @Override
             protected void populateViewHolder(DrinkViewHolder drinkViewHolder, Drinks model, int i) {
                 drinkViewHolder.drink_name.setText(model.getName());
-                Picasso.with(getBaseContext()).load(model.getImage()).into(drinkViewHolder.drink_image);
+                Picasso.with(getBaseContext()).load(model.getImage())
+                        .into(drinkViewHolder.drink_image);
                 final Drinks local = model;
                 drinkViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
