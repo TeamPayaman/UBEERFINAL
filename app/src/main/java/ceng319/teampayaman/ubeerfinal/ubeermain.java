@@ -49,8 +49,7 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubeermain);
 
-        toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Menu");
+        toolbar = findViewById(R.id.ubeerfinaltoolbar);
         setSupportActionBar(toolbar);
 
         //Init Firebase
