@@ -58,6 +58,8 @@ public class SignIn extends AppCompatActivity{
 
 
                             User user = dataSnapshot.child(ubeerphone.getText().toString()).getValue(User.class);
+                            user.setPhone(ubeerphone.getText().toString()); //set phone
+
                             if (user.getPassword().equals(ubeerpassword.getText().toString())) {
                                 Intent homeIntent = new Intent(SignIn.this,ubeermain.class);
                                 Common.currentUser = user;

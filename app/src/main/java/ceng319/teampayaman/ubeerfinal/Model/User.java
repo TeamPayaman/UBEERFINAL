@@ -3,12 +3,12 @@ package ceng319.teampayaman.ubeerfinal.Model;
 public class User {
     private String Name;
     private String Password;
-    private String Email;
+    private String Phone;
 
     public User(){
     }
 
-    public User(String name, String password){
+    public User(String name, String password) {
         Name = name;
         Password = password;
     }
@@ -29,5 +29,11 @@ public class User {
         Password = password;
     }
 
+    public String getPhone() {
+        return Phone;
+    }
 
+    public void setPhone(String phone) {
+        Phone = phone;
+    }
 }

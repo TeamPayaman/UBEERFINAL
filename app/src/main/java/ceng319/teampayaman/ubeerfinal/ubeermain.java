@@ -61,6 +61,13 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
         database = FirebaseDatabase.getInstance();
         category = database.getReference("Category");
 
+        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
+        fab.setOnClickListener((view) ->{
+            Intent cartIntent = new Intent(ubeermain.this,Cart.class);
+            startActivity(cartIntent);
+
+        });
+
 
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
