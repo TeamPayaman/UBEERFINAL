@@ -5,7 +5,7 @@ public class User {
     private String Password;
     private String Phone;
 
-    public User(){
+    public User() {
     }
 
     public User(String name, String password) {
@@ -30,10 +30,10 @@ public class User {
     }
 
     public String getPhone() {
-        return Phone;
+        return null;
     }
 
     public void setPhone(String phone) {
-        Phone = phone;
+        Phone=phone;
     }
 }
