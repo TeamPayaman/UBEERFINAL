@@ -143,17 +143,20 @@ public class ubeermain extends AppCompatActivity implements NavigationView.OnNav
             Intent i = new Intent(ubeermain.this, ubeermain.class);
             startActivity(i);
             break;
-            case R.id.nav_account:
-                Intent h = new Intent(ubeermain.this, ActivityAccount.class);
-                startActivity(h);
+            case R.id.nav_orders:
+                Intent orderIntent = new Intent(ubeermain.this, OrderStatus.class);
+                startActivity(orderIntent);
                 break;
-            case R.id.nav_payment:
+            case R.id.nav_cart:
+                Intent cartIntent = new Intent(ubeermain.this, Cart.class);
+                startActivity(cartIntent);
                 break;
 
-            case R.id.nav_exit:
+            case R.id.nav_logout:
               FirebaseAuth.getInstance().signOut();
-                Intent a = new Intent(ubeermain.this, MainActivity.class);
-                startActivity(a);
+                Intent signIn = new Intent(ubeermain.this, MainActivity.class);
+                signIn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(signIn);
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

@@ -52,14 +52,14 @@ public class ActivityAccount extends AppCompatActivity implements NavigationView
                 Intent i = new Intent(ActivityAccount.this, ubeermain.class);
                 startActivity(i);
                 break;
-            case R.id.nav_account:
-                Intent h = new Intent(ActivityAccount.this, ActivityAccount.class);
-                startActivity(h);
+            case R.id.nav_orders:
+                Intent cartIntent = new Intent(ActivityAccount.this, Cart.class);
+                startActivity(cartIntent);
                 break;
-            case R.id.nav_payment:
+            case R.id.nav_cart:
                 break;
 
-            case R.id.nav_exit:
+            case R.id.nav_logout:
                 FirebaseAuth.getInstance().signOut();
                 Intent a = new Intent(ActivityAccount.this, MainActivity.class);
                 startActivity(a);
